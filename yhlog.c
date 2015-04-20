@@ -29,6 +29,7 @@ char * fmt_time(char *p, size_t len)
     timee = time(0);
     localtime_r(&timee, &tmm);
     strftime(p, len, "%Y-%m-%d %H:%M:%S", &tmm);
+    //strftime(p, len, "%F %X", &tmm);
     return p;
 }
 
